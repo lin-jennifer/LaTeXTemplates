@@ -1,0 +1,28 @@
+
+\newcommand\e{\emph} %Italics
+\newcommand\tb{\textbf} %Bold
+\newcommand\un{\underline} %Underline
+\newcommand\txt{\texttt} %Code
+\newcommand\tsc{\textsc} %Small Caps
+
+% Footnotes
+\usepackage[symbol]{footmisc}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\makeatletter
+\newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
+\makeatother
+
+\usepackage{fontawesome}
+
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+	linkcolor=darkblue,urlcolor=darkblue,
+	anchorcolor=darkblue,citecolor=darkblue}
+
+\usepackage{etaremune}
+\renewcommand{\labelenumi}{[\theenumi]}
+
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+		T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}

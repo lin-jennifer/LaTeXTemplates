@@ -1,0 +1,170 @@
+\documentclass[letterpaper,11pt]{CV} %Use CV .cls file for page formatting
+
+\input{head.tex} %Contains all Document specifics
+
+%Set Name
+\newcommand{\name}{Example CV}
+
+\begin{document}
+
+ {\hspace*{-\marginparsep minus \marginparwidth}%
+ 	\begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+ 		{%\fontfamily{qhv} 
+ 			\Huge \tsc{\textbf{\name}}}
+ 		
+ 		\medskip
+ 		%\hrule
+ 		\rule{\columnwidth}{1.2pt}
+ \end{minipage}}
+
+
+\subsection{Contact Information}
+
+\vspace{.05in}
+\begin{tabular}{@{}p{2.75in}p{2.5in}}
+	Address Line 1  & {\faAt} \href{mailto:jenniferlin2025@u.northwestern.edu}{\texttt{email@college.edu}} \\
+	Address Line 2                     & 
+	{\faGlobe} \href{https://lin-jennifer.github.io}{\texttt{website.com}}\\
+	Address Line 3  & {\faGithub} \href{http://github.com/lin-jennifer}{\texttt{github.com/username}}\\
+	Address Line 4 &\\
+	Address Line 5 &\\
+	&\\
+	Updated \today &\\
+\end{tabular}
+ \vspace{0.2cm}
+
+\subsection{Education}
+
+\textbf{M.A.} \hfill(2013-2015) \\
+College B
+ 
+
+\vspace{0.1cm}
+
+\textbf{B.A.} \hfill (2012)  \\
+College A
+
+
+\subsection{Additional Training}
+
+Research Opportunity A
+
+Teaching Training Conference B
+
+%\vspace{.8cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+
+\subsection{Research Interests}
+
+Interesting Topic A
+
+Interesting Idea B
+
+Observation C
+
+\subsection{Publications}
+
+\begin{etaremune}[topsep = -2pt,itemsep = -2pt, leftmargin=.78cm]
+	\item Publication 5
+	\item Publication 4
+	\item Publication 3
+	\item \footnote[2]{\label{alpha}Alphabetical Ordering of Authors}Publication 2
+	\item \footnoteref{alpha}Publication 1
+\end{etaremune}
+
+\subsection{Conference Presentations}
+
+\textbf{Panels}
+
+%\begin{bibenum}
+\begin{etaremune}[topsep = -2pt,itemsep = -2pt, leftmargin=.78cm]
+	\item Panel 4
+	\item Panel 3
+	\item Panel 2
+	\item Panel 1
+\end{etaremune}
+%\end{bibenum}
+
+
+\vspace{0.3cm}
+
+\textbf{Posters}
+
+\begin{etaremune}[topsep = -2pt,itemsep = -2pt, leftmargin=.78cm]
+	\item Poster 3
+	\item Poster 2
+	\item Poster 1
+\end{etaremune}
+
+%\vspace{0.5cm}
+
+
+\subsection{Skills}
+
+\textbf{Statistics Software:}
+R, R Studio
+
+\textbf{Document Preparation Systems:} \LaTeX, \BibTeX
+
+\textbf{Development Tools:} Git, GitHub
+
+\textbf{Survey Research:} SurveyMonkey 
+
+%\vspace{.8cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TEACHING
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Teaching}
+
+\subsection{As Teaching Assistant}
+
+
+
+\textbf{College A}
+\begin{innerlist}
+	\item Course 1
+	\item Course 2
+	\item Course 3
+	\item Course 4
+\end{innerlist}
+
+%\vspace{0.8cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SERVICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Service}
+
+\subsection{To the Institution}
+
+Reviewer for student grant
+
+Mentor to incoming students
+
+\subsection{Professional Affiliations}
+
+Professional Association A
+
+Professional Association B
+
+%\vspace{0.8cm}
+\vspace{0.1cm}
+
+
+
+
+
+
+%\halfblankline
+
+\end{document}
