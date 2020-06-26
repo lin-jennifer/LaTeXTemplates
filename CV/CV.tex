@@ -1,9 +1,24 @@
+
+% ---------------------------------
+% Describe document characteristics
+% ---------------------------------
+
 \documentclass[letterpaper,11pt]{CV} %Use CV .cls file for page formatting
 
 \input{head.tex} %Contains all Document specifics
 
 %Set Name
 \newcommand{\name}{Example CV}
+
+% ---------------------------------
+% Other Specifications
+% ---------------------------------
+
+% Insert other desired commands here to customize CV
+
+% ---------------------------------
+% Writing CV
+% ---------------------------------
 
 \begin{document}
 
@@ -81,20 +96,20 @@ Observation C
 
 \textbf{Panels}
 
-%\begin{bibenum}
-\begin{etaremune}[topsep = -2pt,itemsep = -2pt, leftmargin=.78cm]
+% This is a forward numbering environment
+\begin{bibenum}
 	\item Panel 4
 	\item Panel 3
 	\item Panel 2
 	\item Panel 1
-\end{etaremune}
-%\end{bibenum}
+\end{bibenum}
 
 
-\vspace{0.3cm}
+\vspace{0.5cm}
 
 \textbf{Posters}
 
+% This is a reverse numbering environment
 \begin{etaremune}[topsep = -2pt,itemsep = -2pt, leftmargin=.78cm]
 	\item Poster 3
 	\item Poster 2

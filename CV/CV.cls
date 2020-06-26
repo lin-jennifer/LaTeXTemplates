@@ -1,7 +1,6 @@
 
 \ProvidesClass{CV}[2010/07/10 v0.9 Resume class]
-% originally `resume`
-% now mike_resume because I edited it
+
 
 \LoadClass[11pt,letterpaper]{article} 
 
@@ -54,14 +53,15 @@
 \makeatother
 
 
-
+% For name and page number on top right of the page starting on second page
+% Set Name in the CV.tex file
 \usepackage{fancyhdr,lastpage}
 \pagestyle{fancy}
 %\pagestyle{empty}      % Uncomment this to get rid of page numbers
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \fancyfootoffset{\marginparsep+\marginparwidth}
-\rhead{\emph{\name} -- \thepage}
+\rhead{\emph{\name} -- \thepage} 
 \AtBeginDocument{\thispagestyle{empty}}
 \newlength{\footpageshift}
 \setlength{\footpageshift}
@@ -73,7 +73,7 @@
 %                    \hfill \,}}
 
 
-
+% Creates Section 
 \renewcommand{\section}[1]{{\hspace*{-\marginparsep minus \marginparwidth}%
 		\begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
 			\vspace{.2cm}
@@ -87,6 +87,7 @@
 	\par}
 }
 
+% Creates Subsection
 \renewcommand{\subsection}[1]{\pagebreak[3]%
     \vspace{1.3\baselineskip}%
     \phantomsection\addcontentsline{toc}{subsection}{#1}%
@@ -94,7 +95,7 @@
     \vspace{-\baselineskip}\par}
 
 
-
+% List commands
 \newcommand*\fixendlist[1]{%
     \expandafter\let\csname preFixEndListend#1\expandafter\endcsname\csname end#1\endcsname
     \expandafter\def\csname end#1\endcsname{\csname preFixEndListend#1\endcsname\vspace{-0.6\baselineskip}}}

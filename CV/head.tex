@@ -1,4 +1,5 @@
 
+% Simplified commands for basic styles
 \newcommand\e{\emph} %Italics
 \newcommand\tb{\textbf} %Bold
 \newcommand\un{\underline} %Underline
@@ -6,23 +7,27 @@
 \newcommand\tsc{\textsc} %Small Caps
 
 % Footnotes
+% Allows for symbols for footnotes and ability to cross reference same footnote
 \usepackage[symbol]{footmisc}
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 \makeatletter
 \newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
 \makeatother
 
+% Allos for symbols in Contact section, among other places
 \usepackage{fontawesome}
 
+% Set link colors
 \usepackage{color,hyperref}
 \definecolor{darkblue}{rgb}{0.0,0.0,0.3}
 \hypersetup{colorlinks,breaklinks,
 	linkcolor=darkblue,urlcolor=darkblue,
 	anchorcolor=darkblue,citecolor=darkblue}
 
+% Allows for reverse numbering
 \usepackage{etaremune}
 \renewcommand{\labelenumi}{[\theenumi]}
 
-
+% Write Bibtex all fancy
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
 		T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
