@@ -1,11 +1,12 @@
 
-\ProvidesClass{CV}[2010/07/10 v0.9 Resume class]
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+\ProvidesClass{CV}[Academic CV Class from Resume source]
 
 
 \LoadClass[11pt,letterpaper]{article} 
 
 \RequirePackage[T1]{fontenc}
-
+\RequirePackage[a-1b]{pdfx}
 
 
 %\usepackage{times}
